@@ -63,7 +63,7 @@
          * 기본 새로 고침 간격.
          */
         tableau.extensions.ui
-            .displayDialogAsync(popupUrl, defaultIntervalInMin, { height: 700, width: 470 })
+            .displayDialogAsync(popupUrl, defaultIntervalInMin, { height: 730, width: 470 })
             .then((closePayload) => {
                 //promise는 대화 상자가 예상대로 닫혔을 때 해결됩니다.
                 // 팝업 확장은 tableau.extensions.ui.closeDialog를 호출했습니다.
