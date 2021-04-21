@@ -101,7 +101,7 @@
     function makeSheetBtn(sheetName) {
         const button = $("<button></button>");
         button.text(sheetName + " 선택");
-        button.addClass("btn btn-block btn-outline-primary");
+        button.addClass("btn btn-block btn-sm btn-outline-primary");
         // sheetName을 그대로 부모에게 반환하며 종료하는 함수 연결
         button.on("click", () => selected(sheetName));
         return button;
@@ -109,7 +109,7 @@
     function makeColBtn(colName) {
         const button2 = $("<button></button>");
         button2.text(colName);
-        button2.addClass("btn btn-block btn-outline-secondary");
+        button2.addClass("btn btn-block btn-sm btn-outline-secondary");
         // sheetName을 그대로 부모에게 반환하며 종료하는 함수 연결
         button2.on("click", () => {
             $("#select-column-area>button").removeClass("active");
