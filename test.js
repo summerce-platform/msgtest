@@ -140,7 +140,7 @@
                             if (fiveArr.includes(res[i].id) == true) {
                                 phoneAndId.push({
                                     phone: res[i].phone,
-                                    아이디: res[i].userId,
+                                    아이디: res[i].id,
                                     적립금: res[i].reserve,
                                 });
                             }
