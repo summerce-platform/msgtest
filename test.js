@@ -48,7 +48,8 @@
         // 이것은 window.location.origin 속성을 사용하여 체계, 호스트 이름 및
         // 부모 확장이 현재 실행중인 포트이므로이 문자열에는
         // 확장이 새 위치에 배포 된 경우 업데이트됩니다.
-        const popupUrl = `${window.location.origin}/Samples/test/testDialog.html`;
+        // const popupUrl = `${window.location.origin}/Samples/test/testDialog.html`;
+        const popupUrl = `${window.location.origin}/msgtest/testDialog.html`;
 
         /**
          * 실제로 사용자에게 팝업 확장을 표시하는 API 호출입니다. 그만큼
@@ -62,6 +63,7 @@
          * 기본 새로 고침 간격.
          */
         tableau.extensions.ui
+            .displayDialogAsync(popupUrl, defaultIntervalInMin, { height: 730, width: 470 })
             .then((closePayload) => {
                 //promise는 대화 상자가 예상대로 닫혔을 때 해결됩니다.
                 // 팝업 확장은 tableau.extensions.ui.closeDialog를 호출했습니다.
