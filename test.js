@@ -130,7 +130,6 @@
                 }
                 fiveArr = new Set(fiveArr);
                 fiveArr = [...fiveArr];
-                console.log(fiveArr);
 
                 var phoneAndId = [];
                 ///아이디값을 보내서 휴대폰번호를 얻는 ajax구문 작성
@@ -138,8 +137,6 @@
                     .done((res) => {
                         for (i = 0; i < res.length; i++) {
                             if (fiveArr.includes(res[i].id) == true) {
-                                console.log(fiveArr[i]);
-                                console.log(res[i].id);
                                 phoneAndId.push({
                                     phone: res[i].phone,
                                     아이디: res[i].userId,
@@ -149,7 +146,7 @@
                         }
                     })
                     .fail((err) => console.log(err));
-
+                console.log(phoneAndId);
                 $("#sheetname").text(JSON.stringify(phoneAndId));
                 $("#colnames").text(i + "번째");
 
