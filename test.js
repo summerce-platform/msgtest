@@ -138,7 +138,7 @@
                     .done((res) => {
                         for (i = 0; i < res.length; i++) {
                             if (fiveArr.includes(res[i].id) == true) {
-                                console.log(fiverArr[i]);
+                                console.log(fiveArr[i]);
                                 console.log(res[i].id);
                                 phoneAndId.push({
                                     phone: res[i].phone,
@@ -150,20 +150,18 @@
                     })
                     .fail((err) => console.log(err));
 
-                $("#sheetname").text(JSON.stringify(fiveArr));
+                $("#sheetname").text(JSON.stringify(phoneAndId));
                 $("#colnames").text(i + "번째");
 
                 // $("#sheetname").text(JSON.stringify(fiveArr));
-                var receiversList = [
-                    {
-                        phone: "010-5030-1826",
-                        아이디: "new1",
-                        적립금: 0,
-                    },
-                ];
-                MessageAPI.openMessaging(receiversList);
-
-                // $("#sheetname").text(JSON.stringify(worksheetData.data));
+                // var receiversList = [
+                //     {
+                //         phone: "010-5030-1826",
+                //         아이디: "new1",
+                //         적립금: 0,
+                //     },
+                // ];
+                // MessageAPI.openMessaging(receiversList);
             });
         });
     }
