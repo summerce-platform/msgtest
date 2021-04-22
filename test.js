@@ -135,6 +135,7 @@
                 ///아이디값을 보내서 휴대폰번호를 얻는 ajax구문 작성
                 getDataAjax()
                     .done((res) => {
+                        console.log("ajax결과", res);
                         for (i = 0; i < res.length; i++) {
                             if (fiveArr.includes(res[i].id) == true) {
                                 phoneAndId.push({
