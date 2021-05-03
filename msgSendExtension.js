@@ -49,7 +49,7 @@
         // 부모 확장이 현재 실행중인 포트이므로이 문자열에는
         // 확장이 새 위치에 배포 된 경우 업데이트됩니다.
         // const popupUrl = `${window.location.origin}/Samples/test/testDialog.html`;
-        const popupUrl = `${window.location.origin}/msgtest/testDialog.html`;
+        const popupUrl = `${window.location.origin}/msgtest/msgSendDialogExtension.html`;
 
         /**
          * 실제로 사용자에게 팝업 확장을 표시하는 API 호출입니다. 그만큼
