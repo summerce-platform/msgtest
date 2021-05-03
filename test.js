@@ -148,7 +148,9 @@
                     })
                     .fail((err) => console.log(err));
                 console.log(phoneAndId);
-                $("#sheetname").text(JSON.stringify(phoneAndId));
+                console.log(fiveArr);
+                console.log(fiveArr.length);
+                $("#sheetname").text(JSON.stringify(fiveArr));
                 $("#colnames").text(i + "번째");
 
                 // $("#sheetname").text(JSON.stringify(fiveArr));
